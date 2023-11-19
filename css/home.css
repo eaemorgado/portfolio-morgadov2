@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #323546;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* 
+config do hero */
+
+#hero {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#hero h1 {
+    font-size: 1.8em;
+}
+
+#hero h3 {
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#hero p {
+    font-weight: 400;
+    font-size: 12PX;
+    margin-top: 15px;
+}
+
+#hero button {
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Config ablidades tecnicas */
+
+#habilidades {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#habilidades article {
+    background-color: #fff;
+    color: #323546;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#habprincipais {
+    gap: 10px;
+}
+
+#habilidades article i {
+    font-size: 35px;
+    margin: 10px;
+}
+
+#habilidades article h3 {
+    font-size: 16px;
+}
+
+#habilidades article p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+#habprincipais {
+    display: flex;
+    flex-direction: row;
+}
+
+#habilidadessec {
+    display: flex;
+    gap: 2vw; /* Espaçamento relativo */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Largura relativa */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  #iconhb {
+    background-color: #fff;
+    padding: 3vw; /* Preenchimento relativo */
+    border-radius: 5px;
+    color: #323546;
+    font-size: 5vw; /* Tamanho de fonte relativo */
+  }
+  
+  /* Se deseja aumentar tudo além do ícone, aplique essas regras a um contêiner que englobe todos os elementos */
+  #habilidadesContainer {
+    width: 90%; /* Largura relativa */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-size: 10vw; /* Tamanho de fonte relativo */
+    padding: 2vw; /* Preenchimento relativo */
+    
+  }
+  
+  /* Aplicando ao ícone dentro do contêiner */
+  #habilidadesContainer #iconhb {
+    font-size: 10vw; /* Tamanho de fonte relativo */
+    padding: 5vw; /* Preenchimento relativo */
+  }
+  

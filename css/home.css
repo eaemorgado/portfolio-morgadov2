@@ -1,15 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap');
 
+@media (min-width: 320px) and (max-width: 480px) {
+
 html {
     font-family: 'Inter', sans-serif;
-    /* background-color: #323546; */
-    color: #111111;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: #222222;
+    color: #fff;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 header {
-    height: 80px;
+    max-height: 80px;
+    padding: 20px;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px ;
+}
+
+header img {
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#active {
+    color: #671FFF;
+    font-weight: bold;
+    
 }
 
 main {
@@ -19,8 +49,10 @@ main {
 }
 
 section {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* 
 config do hero */
@@ -32,7 +64,7 @@ config do hero */
 
 #hero h1 {
     font-size: 1.8em;
-    color: #671FFF;
+    color: #fff;
 
 }
 
@@ -79,6 +111,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+
 }
 
 
@@ -90,17 +123,16 @@ text-align: center;
 }
 
 #habilidades article {
-    background-color: #eeeeee;
-    color: #323546;
+    background-color: #2D2D2D;
+    color: #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     text-align: center;
-    font-weight: bold;
     transition: all 0.5s ease;
-    
+    margin-bottom: 10px;
     
 }
 
@@ -108,6 +140,8 @@ text-align: center;
     background-color: #671FFF;
     color: #eeeeee;
     transform: scale(105%);
+    -webkit-box-shadow: 0px 0px 22px -2px #671FFF; 
+box-shadow: 0px 0px 22px -2px #671FFF;
 }
 
 #habprincipais {
@@ -126,6 +160,7 @@ text-align: center;
 
 #habilidades article h3 {
     font-size: 16px;
+    font-weight: bold;
 }
 
 #habilidades article p {
@@ -173,3 +208,189 @@ text-align: center;
 
 
   /* Animação titulo */
+
+  /* Projetos recentes */
+
+#projetos-recentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+#projetos-recentes h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#projeto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#img-projeto {
+    height: 140px;
+    width: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+#info-projeto {
+    text-align: left;
+    font-size: 12px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+#info-projeto span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#info-projeto p {
+    height: auto;
+    width: 180px;
+}
+
+#info-projeto button {
+    border: none;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #671FFF;
+    
+    transition: 0.3s ease 0s;
+}
+
+#info-projeto button:hover {
+    transform: scale(105%);
+    -webkit-box-shadow: 0px 0px 22px -2px #671FFF; 
+    box-shadow: 0px 0px 22px -2px #671FFF;
+}
+
+#ver-mais-projetos{
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2D2D2D;
+    color: #fff;
+    border: none;
+    transition: 0.3s ease 0s;
+}
+
+#ver-mais-projetos:hover {
+    transform: scale(105%);
+    background-color: #671FFF;
+    -webkit-box-shadow: 0px 0px 22px -2px #671FFF; 
+    box-shadow: 0px 0px 22px -2px #671FFF;
+
+}
+/* 
+Area de contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+}
+
+#contato h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 12px;
+}
+
+#meios-contato {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+#contato button {
+    border: 1px solid #671FFF;
+    color: #fff;
+    background-color: #222222;
+    border-radius: 10px;
+    height: 45px;
+    width: 100px;
+    margin-top: 10px;
+    transition: 0.3s ease 0s;
+}
+
+#contato button:hover {
+    transform: scale(105%);
+    background-color: #671FFF;
+    -webkit-box-shadow: 0px 0px 22px -2px #671FFF; 
+    box-shadow: 0px 0px 22px -2px #671FFF;
+}
+
+/* footer */
+
+footer{
+    background-color: #2D2D2D;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+footer div button {
+    border: none;
+    border-radius: 5px;
+    background-color: #671FFF;
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    transition: 0.3s ease 0s;
+}
+
+
+footer div button:hover{
+    transform: scale(105%);
+    background-color: #671FFF;
+    -webkit-box-shadow: 0px 0px 22px -2px #671FFF; 
+    box-shadow: 0px 0px 22px -2px #671FFF;
+}
+
+}
+
+@media (min-width: 481px) and (max-width:  768px) {
+
+}
+
+@media (min-width: 769) and (max-width:  1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width:  1200px) {
+
+}
+
+@media (min-width: 1201px) {
+
+}
